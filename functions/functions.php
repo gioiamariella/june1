@@ -49,35 +49,30 @@ function getPro() {
 
 	if(!isset($_GET['cat'])) {
 		if(!isset($_GET['paper_type'])) {
-
-
-
-	global $con;
-
-	$get_pro = "select * from products order by RAND() LIMIT 0,6";
-	$run_pro = mysqli_query($con,$get_pro);
-	while($row_pro=mysqli_fetch_array($run_pro)){
-		$pro_id = $row_pro['product_id'];
-		$pro_cat = $row_pro['product_cat'];
-		$pro_pk = $row_pro['product_paperkind'];
-		$pro_pf = $row_pro['product_printfinish'];
-		$pro_title = $row_pro['product_title'];
-		$pro_price = $row_pro['product_price'];
-		$pro_img = $row_pro['product_img'];
-
-		echo "
-			<div id='single_product'>
-
-				 <center><h3>$pro_title</h3>
-				 <div class='effects'>
-					<img  src='admin_area/product_images/$pro_img'  class='columns'  width='320' height='150'/>
-					<p><b>Php $pro_price</b></p>
-					<a href='details.php?pro_id=$pro_id' style='float: left;'>Details</a>
-				 </div>
-			</div>
-		";
-	}
-	}
+			global $con;
+			$get_pro = "select * from products order by RAND() LIMIT 0,6";
+			$run_pro = mysqli_query($con,$get_pro);
+				while($row_pro=mysqli_fetch_array($run_pro)){
+					$pro_id = $row_pro['product_id'];
+					$pro_cat = $row_pro['product_cat'];
+					$pro_pk = $row_pro['product_paperkind'];
+					$pro_pf = $row_pro['product_printfinish'];
+					$pro_title = $row_pro['product_title'];
+					$pro_price = $row_pro['product_price'];
+					$pro_img = $row_pro['product_img']; 
+				?>
+					<div id='single_product'>
+						 <center><h3><?=$pro_title?></h3>
+						 <div class='effects'>
+						 	<a href='index.php?pro_id=<?=$pro_id?>' style='float: left;'>
+							<img  src='admin_area/product_images/<?=$pro_img?>'  class='columns'  width='320' height='150'/>
+							<p><b>Php <?=$pro_price?></b></p>
+							</a>
+						 </div>
+					</div>
+				<?php
+				}
+		}
 	}
 }
 

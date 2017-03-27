@@ -25,7 +25,12 @@
 				$filetype = $_FILES["file_img"]["type"];
 				$filepath = "../customer/customer_images/".$filename;
 
-				move_uploaded_file($filetmp, $filepath);
+				if(move_uploaded_file($filetmp, $filepath)){
+					//Success message here
+					echo "<h3>File uploaded Successfully!</h3>";
+				}else{
+					echo "Oops, Something went wrong..";
+				}
 
 				$sql = "INSERT INTO customer_upload (img_name,img_path,img_type) VALUES ('$filename','$filepath','$filetype')";
 				$result = mysqli_query($con, $sql);

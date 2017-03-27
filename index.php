@@ -35,6 +35,9 @@
 //						break;
 					}
 				}
+				if(isset($_GET['pro_id'])){
+					include('details.php');
+				}
 //				else
 //				include('home.php');
 			?>
