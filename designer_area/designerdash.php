@@ -1,20 +1,20 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <?php
-	include("functions/functions.php")
+	include("../functions/functions.php")
 ?>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
 	</head>
 	<body>
-		<form action="upload.php" method="post" enctype="multipart/form-data">
+		<form action="designerdash.php" method="post" enctype="multipart/form-data">
  			Select image to upload:
 			<input type="file" name="fileToUpload" id="fileToUpload">
 			<input type="submit" value="Upload Image" name="submit">
 		</form>
 
 		<?php
-			$target_dir = "../designer_area/product_images/";
+			$target_dir = "product_images/";
 			$target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 			$uploadOk = 1;
 			$imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
