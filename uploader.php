@@ -12,7 +12,7 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 	</head>
 	<body oncontextmenu="return false;">
-		<form action="uploader.php" method="post" enctype="multipart/form-data">
+		<form method="post" enctype="multipart/form-data">
 			<input type="file" name="file_img" />
 			<input type="submit" name="btn_upload" value="Upload">
 		</form>
