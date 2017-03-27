@@ -5,7 +5,7 @@
 		<title>Stamped. | Quality Business Cards</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />  
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-		<link rel ="stylesheet" type="text/css" href="/THESIS/styles/style.css" />
+		<link rel ="stylesheet" type="text/css" href="styles/style.css" />
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 	</head>
 	<body oncontextmenu="return false;">

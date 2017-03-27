@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel ="stylesheet" type="text/css" href="/THESIS/styles/style.css" />
+<link rel ="stylesheet" type="text/css" href="styles/style.css" />
 <title>Stamped. | Quality Business Cards</title>
 <style>
 body, html {
