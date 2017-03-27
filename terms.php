@@ -1,15 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-	<head>
-		<title>Stamped. | Our Products</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />  
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-		<link rel ="stylesheet" type="text/css" href="/THESIS/styles/style.css" /></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-	</head>
-	<body oncontextmenu="return false;">
-			<div class="terms">
+<div class="terms">
 				<p class="title">Terms and Conditions</p>
 				<p><b>Stamped.</b> is a business card design and print service that caters to bulk orders and individual orders.</p>
 				<p>1. It is the client full responsibility to read and understand the terms and condition stated below. Ordering from the online store means that you have read and understand the terms and conditions listed below.</p>
@@ -28,7 +17,4 @@
 				<p>14. We use a variety of paper types. We will not accept verbal paper request, only thru email after we have sent the final pdf file for the final approval. </p>
 				<p>15. We try our best to proof read your details but due to the personalized nature of this service, NO REFUND / RE PRINTING will be issued once printing has started. Therefore be extra careful when giving us the OK for the artwork.</p>
 				<p>16. Non transferrable </p>
-			</div>
-
-	</body>
-</html>
+</div>

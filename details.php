@@ -1,22 +1,7 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"  
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
 <?php
 	include("functions/functions.php")
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
-	<head>
-		<title>Stamped. | Our Products</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />  
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-		<link rel ="stylesheet" type="text/css" href="/THESIS/styles/style.css" /></script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
-	</head>
-	<body oncontextmenu="return false;" bgcolor="pink">
-
-				<ul class="topnav" id="myTopnav">
-  			<?php include("includes/inc_navi2.php");?>
-		</ul><!--start of products-->
-
 <div class="main_wrapper">
 	<!--search bar is here-->
 	<div class="menubar">
@@ -87,7 +72,7 @@
 								<img  src='admin_area/product_images/$pro_img'  class='columns'  width='500' />
 								<p><b>Php $pro_price</b></p>
 								<p> $pro_desc </p>
-								<a href='products.php' style='float: left;'>Go Back</a>
+								<a href='index.php?page=products' style='float: left;'>Go Back</a>
 							 </div>
 						</div>
 					";
@@ -103,13 +88,3 @@
 	<!--content wrapper ends here-->
 </div>
 <!--end of products-->
-
-  		<div id="footer">
-    			<p><?php include("includes/inc_bottomcontact.php");?></p>
-  		</div>
-
-
-<php include("includes/inc_responsivenav_script.php");?>
-
-	</body>
-</html>
