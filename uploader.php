@@ -23,7 +23,7 @@
 				$filetmp = $_FILES["file_img"]["tmp_name"];
 				$filename = $_FILES["file_img"]["name"];
 				$filetype = $_FILES["file_img"]["type"];
-				$filepath = "customer/customer_images/".$filename;
+				$filepath = "../customer/customer_images/".$filename;
 
 				move_uploaded_file($filetmp, $filepath);
 
