@@ -234,11 +234,6 @@ ul.topnav li.icon {display: none;}
   #single_product img {border: 2px solid black;}
   #shopping_cart {width:800px; height:50px; background:black; color:white;}
 
-#homedesc {
-  float:left;
-  width: 25%;
-  padding: 10px;
-}
 #homedesc img {text-align: center;}
 
 #footer {
@@ -269,10 +264,16 @@ width: auto;
 background: #ffffff;
 }
 
+#homedesc {
+  display: inline-block;
+  width: 28%;
+  height: auto;
+}
+
 b.desctitle {
   text-align: center;
 }
 
-p.homedescr {
+p.homedesc {
   text-align: justify;
 }

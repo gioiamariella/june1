@@ -69,43 +69,23 @@ h3 {
   </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;height:auto;">
   <h3 style="text-align:center;">We keep it classy.</h3>
   <p>Here at <b>STAMPED.</b>, we'll help you make a good, lasting first impression.</p>
-<!-- Three columns mamaya -->
+  <div id="homedesc">
+      <b class="desctitle">Choose a template</b>
+      <p class="homedesc">Pressed for time? Want an instant, quality design for your card? Pick from our collection of designer-made templates!</p>
+  </div>
 
   <div id="homedesc">
-	  <img src="">
-	  <b class="desctitle">Choose a Template</b>
-	  <p class="homedescr">Pressed for time? Want an instant quality design for your card? Pick from our collection of designer-made templates!</p>
+      <b class="desctitle">The Customizer</b>
+      <p class="homedesc">Feeling a bit artsy? Why not create your own calling card from scratch! Add flowers, choose a font - you name it, you can do it!</p>
   </div>
+
   <div id="homedesc">
-	  <img src="">
-	  <b class="desctitle">The Customizer</b>
-	  <p class="homedescr">Feeling a bit artsy? Why not create your own calling card from scratch! Add flowers, choose a font - you name it, you can do it!</p>
+      <b class="desctitle">Upload Your Own</b>
+      <p class="homedesc">Already have a design but have no idea where to get it printed? You've come to the right place! We'll print it for you, top-quality.</p>
   </div>
-  <div class="homedesc">
-	  <img src="">
-	  <b id="desctitle">Upload your own</b>
-	  <p id="homedescr">Already have a design but have no idea where to get it printed? You've come to the right place! We'll print it for you, top-quality.</p>
-  </div>
-  <!--<table>
-  	<tr>
-  		<td><img src=""></td>
-  		<td><img src=""></td>
-  		<td><img src=""></td>
-  	</tr>
-  	<tr>
-  		<td><b>Choose a Template</b></td>
-  		<td><b>The Customizer</b></td>
-  		<td><b>Upload Your Own</b></td>
-  	</tr>
-  	<tr>
-  		<td>Pressed for time? Want an instant quality design for your card? Pick from our collection of designer-made templates!</td>
-  		<td>Feeling a bit artsy? Why not create your own calling card from scratch! Add flowers, choose a font - you name it, you can do it!</td>
-  		<td>Already have a design but have no idea where to get it printed? You've come to the right place! We'll print it for you, top-quality.</td>
-  	</tr>
-  </table>-->
 </div>
 
 <div class="bgimg-2">
