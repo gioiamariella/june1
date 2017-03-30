@@ -2,6 +2,7 @@
 <html>
 <head>
 <link rel ="stylesheet" type="text/css" href="styles/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 <title>Stamped. | Quality Business Cards</title>
 <style>
 body, html {
@@ -23,7 +24,7 @@ body, html {
 }
 
 .bgimg-2 {
-  background-image: url("https://www.w3schools.com/howto/img_parallax2.jpg");
+  background-image: url("images/homepage_cards_mockup.jpg");
   min-height: 400px;
 }
 
@@ -55,6 +56,11 @@ h3 {
   font: 20px "Lato", sans-serif;
   color: #111;
 }
+
+b {
+  font-family: 'Lora', serif;
+}
+
 </style>
 </head>
 <body>
@@ -69,32 +75,33 @@ h3 {
   </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;height:auto;">
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;height:30%;">
   <h3 style="text-align:center;">We keep it classy.</h3>
-  <p>Here at <b>STAMPED.</b>, we'll help you make a good, lasting first impression.</p>
+  <p><center>Here at <b>STAMPED.</b>, we'll help you make a good, lasting first impression.</center></p>
   <div id="homedesc">
-      <b class="desctitle">Choose a template</b>
-      <p class="homedesc">Pressed for time? Want an instant, quality design for your card? Pick from our collection of designer-made templates!</p>
+      <center><b>Choose a template</b></center>
+      <p>Pressed for time? Want an instant, quality design for your card? Pick from our collection of designer-made templates!</p>
   </div>
 
   <div id="homedesc">
-      <b class="desctitle">The Customizer</b>
-      <p class="homedesc">Feeling a bit artsy? Why not create your own calling card from scratch! Add flowers, choose a font - you name it, you can do it!</p>
+      <center><b>The Customizer</b></center>
+      <p>Feeling a bit artsy? Why not create your own calling card from scratch! Add flowers, choose a font - you name it, you can do it!</p>
   </div>
 
   <div id="homedesc">
-      <b class="desctitle">Upload Your Own</b>
-      <p class="homedesc">Already have a design but have no idea where to get it printed? You've come to the right place! We'll print it for you, top-quality.</p>
+      <center><b>Upload Your Own</b></center>
+      <p>Already have a design but have no idea where to get it printed? You've come to the right place! We'll print it for you, top-quality.</p>
   </div>
 </div>
-
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
+     -->
 <div class="bgimg-2">
   <div class="caption">
-    <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">Quality business cards at affordable prices.</span>
+    <span class="border" style="background-color:transparent;font-size:25px;color: #484848;text-shadow: 2px 2px 4px #ffffff;">Quality business cards at affordable prices.</span>
   </div>
 </div>
 
-<div style="position:relative;">
+<!--<div style="position:relative;">
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
     <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
@@ -110,14 +117,21 @@ h3 {
   <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
     <p>Scroll up and down to really get the feeling of how Parallax Scrolling works.</p>
   </div>
-</div>
+</div> 
 
 <div class="bgimg-1">
   <div class="caption">
     <span class="border">COOL!</span>
-  </div>
+  </div>-->
 </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p><?php include("includes/inc_bottomcontact.php");?></p>
+        </div>
+    </div>
 <script>
+
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {

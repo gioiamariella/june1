@@ -7,11 +7,26 @@
 	<head>
 	</head>
 	<body>
+		<h2>Designer Dashboard</h2>
+		<p>The <b>Designer Dashboard</b>, or Designer Dash, is used by designers to accurately manage the designs that will soon be uploaded on the website</p>
+
 		<form action="designerdash.php" method="post" enctype="multipart/form-data">
  			Select image to upload:
 			<input type="file" name="fileToUpload" id="fileToUpload">
 			<input type="submit" value="Upload Image" name="submit">
 		</form>
+		<br>
+		<b>Design Status and Remarks</b>
+		<p>Here is where you will see the status of your design, as approved or disapproved by the administrator.</p>
+
+		<table border="1">
+		<tr>
+			<th>Image Filename</th>
+			<th>Image Type</th>
+			<th>Image Description</th>
+			<th>Remarks</th>
+		</tr>
+		</table>
 
 		<?php
 			$target_dir = "product_images/";
