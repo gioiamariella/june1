@@ -29,6 +29,9 @@
 						case 'uploader':
 						include('uploader.php');
 						break;
+						case 'login':
+						include('login.php');
+						break;
 //						case 'home_page':
 //						default:
 //						include('home.php');

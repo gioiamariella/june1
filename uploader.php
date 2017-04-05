@@ -12,6 +12,11 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 	</head>
 	<body oncontextmenu="return false;">
+	<h3>The Uploader</h3>
+	<h5>Guidelines:</h5>
+	<p>1. Files to be uploaded must be <b>.jpg</b>, <b>.pdf</b>, or a flattened </b>.psd</b> file. Files must be <b>300 dpi</b>, <b>CMYK</b> format.</p>
+	<p>2. Please make sure that this is the <i>final file for printing</i>, meaning the designers will not do any more alterations regarding the design.</p>
+	<p>3. Should the designers find that the files are corrupted, the client will be notified thru email regarding requests for re-uploads.</p>
 		<form method="post" enctype="multipart/form-data">
 			<input type="file" name="file_img" />
 			<input type="submit" name="btn_upload" value="Upload">

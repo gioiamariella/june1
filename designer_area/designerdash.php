@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<h2>Designer Dashboard</h2>
-		<p>The <b>Designer Dashboard</b>, or Designer Dash, is used by designers to accurately manage the designs that will soon be uploaded on the website</p>
+		<p>The <b>Designer Dashboard</b>, or Designer Dash, is used by designers to accurately manage the designs that will soon be uploaded on the website.</p>
 
 		<form action="designerdash.php" method="post" enctype="multipart/form-data">
  			Select image to upload:

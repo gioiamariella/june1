@@ -75,21 +75,24 @@ b {
   </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;height:30%;">
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;height:60%;">
   <h3 style="text-align:center;">We keep it classy.</h3>
   <p><center>Here at <b>STAMPED.</b>, we'll help you make a good, lasting first impression.</center></p>
   <div id="homedesc">
-      <center><b>Choose a template</b></center>
+      <center><b>Choose a template</b><br>
+      <img src="images/template_icon.png"/></center>
       <p>Pressed for time? Want an instant, quality design for your card? Pick from our collection of designer-made templates!</p>
   </div>
 
   <div id="homedesc">
-      <center><b>The Customizer</b></center>
+      <center><b>The Customizer</b><br>
+      <img src="images/customizer_icon.png"/></center>
       <p>Feeling a bit artsy? Why not create your own calling card from scratch! Add flowers, choose a font - you name it, you can do it!</p>
   </div>
 
   <div id="homedesc">
-      <center><b>Upload Your Own</b></center>
+      <center><b>Upload Your Own</b><br>
+      <img src="images/upload_icon.png"/></center>
       <p>Already have a design but have no idea where to get it printed? You've come to the right place! We'll print it for you, top-quality.</p>
   </div>
 </div>
