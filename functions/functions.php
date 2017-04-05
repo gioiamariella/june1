@@ -13,7 +13,7 @@ function getCats () {
 		$cat_id = $row_cats['cat_id'];
 		$cat_title = $row_cats['cat_title'];
 
-	echo "<li><a href='#'>$cat_title</a></li>";
+	echo "<li><a href='index.php?cat=$cat_id'>$cat_title</a></li>";
 	}
 }
 
@@ -28,7 +28,7 @@ function getPaperKind () {
 		$pk_id = $row_PaperKind['pk_id'];
 		$pk_title = $row_PaperKind['pk_title'];
 
-	echo "<li><a href='#'>$pk_title</a></li>";
+	echo "<li><a href='index.php?pk=$pk_id'>$pk_title</a></li>";
 	}
 }
 
