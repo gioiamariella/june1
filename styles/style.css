@@ -51,6 +51,10 @@ html, body {
 .topnav {
     background-color: #333;
     overflow: hidden;
+    position: fixed;
+    margin: 0 auto;
+    z-index: 2;
+    width: 100%;
 }
 
 /* Style the links inside the navigation bar */
@@ -62,6 +66,7 @@ html, body {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    margin: 0 auto;
 }
 
 /* Change the color of links on hover */
@@ -93,13 +98,10 @@ p.title {
 }
 
 div.terms {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-p.terms {
+  padding: 50px;
+  width: 80%;
+  margin: 100px;
   text-align: justify;
-  font-size: ;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
