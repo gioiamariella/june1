@@ -93,15 +93,22 @@ a {
   color: black;
 }
 
-p.title {
-  text-shadow: 5px 5px 5px #24b2a2;
-}
 
 div.terms {
   padding: 50px;
-  width: 80%;
-  margin: 100px;
+  max-width: 100%;
+  margin: 0 auto 10px auto;
   text-align: justify;
+  line-height: 1.8;
+}
+
+div.terms p.title{
+  text-align:center;
+  font-size: 160%;
+  text-shadow: 5px 5px 5px #24b2a2;
+  margin-bottom: 30px;
+  word-spacing: 10px;
+  letter-spacing: 5px;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
