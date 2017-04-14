@@ -11,7 +11,7 @@
 	<body>
 		<h1 class="title">Designer Dashboard</h2>
 		<p class="desc">The <b>Designer Dashboard</b>, or Designer Dash, is used by designers to accurately manage the designs that will soon be uploaded on the website.</p>
-		<header>
+		<!--<header>
 			<nav>
 			    <ul>
 			      <li class="current"><a href="#home">Home</a></li>
@@ -19,7 +19,7 @@
 			      <li id="logo"><a href="#status">Status</a></li>
 			    </ul>
 			</nav>
-		</header>
+		</header>-->
 		<div id="container">
 
 			<form action="designerdash.php" method="post" enctype="multipart/form-data">
@@ -31,14 +31,19 @@
 			<b>Design Status and Remarks</b>
 			<p>Here is where you will see the status of your design, as approved or disapproved by the administrator.</p>
 
-			<table border="0" cellspacing="10px">
-			<tr>
-				<th>Image Filename</th>
-				<th>Image Type</th>
-				<th>Image Description</th>
-				<th>Remarks</th>
-			</tr>
-			</table>
+			<center>
+				<table border="0" cellspacing="10px">
+				<tr>
+					<th>Image Filename</th>
+					<th>Image Type</th>
+					<th>Image Description</th>
+					<th>Remarks</th>
+				</tr>
+				</table>
+			</center>
+
+			<b>Client Design</b>
+			<p>Here is where the designs of the clients who use The Customizer will appear. Designers should recreate these designs for printing. Uploaded photos such as logos will also be included here.</p>
 
 			<?php
 				$target_dir = "product_images/";

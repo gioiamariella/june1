@@ -12,6 +12,9 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 	</head>
 	<body oncontextmenu="return false;">
+			<div class="topnav" id="myTopnav">
+  			<?php include("includes/inc_navi.php");?>
+		</div>
 	<h3>The Uploader</h3>
 	<h5>Guidelines:</h5>
 	<p>1. Files to be uploaded must be <b>.jpg</b>, <b>.pdf</b>, or a flattened </b>.psd</b> file. Files must be <b>300 dpi</b>, <b>CMYK</b> format.</p>
@@ -41,5 +44,21 @@
 				$result = mysqli_query($con, $sql);
 			}
 		?>
+		    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p><?php include("includes/inc_bottomcontact.php");?></p>
+        </div>
+    </div>
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
 	</body>
 </html>

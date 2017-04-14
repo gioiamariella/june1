@@ -13,7 +13,7 @@ function getCats () {
 		$cat_id = $row_cats['cat_id'];
 		$cat_title = $row_cats['cat_title'];
 
-	echo "<li><a href='index.php?cat=$cat_id'>$cat_title</a></li>";
+	echo "<li><a href='products.php?cat=$cat_id'>$cat_title</a></li>";
 	}
 }
 
@@ -28,7 +28,7 @@ function getPaperKind () {
 		$pk_id = $row_PaperKind['pk_id'];
 		$pk_title = $row_PaperKind['pk_title'];
 
-	echo "<li><a href='index.php?pk=$pk_id'>$pk_title</a></li>";
+	echo "<li><a href='products.php?pk=$pk_id'>$pk_title</a></li>";
 	}
 }
 
@@ -64,8 +64,8 @@ function getPro() {
 					<div id='single_product'>
 						 <center><h3><?=$pro_title?></h3>
 						 <div class='effects'>
-						 	<a href='index.php?pro_id=<?=$pro_id?>' style='float: left;'>
-							<img  src='admin_area/product_images/<?=$pro_img?>'  class='columns'  width='320' height='150'/>
+						 	<a href='products.php?pro_id=<?=$pro_id?>' style='float: left;'>
+							<img src='admin_area/product_images/<?=$pro_img?>'  class='columns'  width='320' height='150'/>
 							<p><b>Php <?=$pro_price?></b></p>
 							</a>
 						 </div>

@@ -2,71 +2,16 @@
 <html>
 <head>
 <link rel ="stylesheet" type="text/css" href="styles/style.css" />
-<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel ="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
 <title>Stamped. | Quality Business Cards</title>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
-}
-
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  position: relative;
-  background-position: center;
-  background-size: cover;
-
-}
-.bgimg-1 {
-  background-image: url("images/homepage_cards.jpg");
-  min-height: 100%;
-}
-
-.bgimg-2 {
-  background-image: url("images/homepage_cards_mockup.jpg");
-  min-height: 400px;
-}
-
-.bgimg-3 {
-  background-image: url("https://www.w3schools.com/howto/img_parallax3.jpg");
-  min-height: 400px;
-}
-
-.caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-}
-
-.caption span.border {
-  background-color: #111;
-  color: #fff;
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-b {
-  font-family: 'Lora', serif;
-}
-
-</style>
 </head>
 <body>
 
 		<div class="topnav" id="myTopnav">
-  			<?php include("includes/inc_navi2.php");?>
+  			<?php include("includes/inc_navi.php");?>
 		</div>
 
 <div class="bgimg-1">

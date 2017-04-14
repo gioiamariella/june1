@@ -10,7 +10,7 @@
 	</head>
 	<body oncontextmenu="return false;">
 		<div class="topnav" id="myTopnav">
-  			<?php include("includes/inc_navi2.php");?>
+  			<?php include("includes/inc_navi.php");?>
 		</div>
 
 		<div class="dynamic_content">

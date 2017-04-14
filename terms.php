@@ -1,4 +1,18 @@
-<div class="terms">
+<!DOCTYPE html>
+<html>
+<head>
+<link rel ="stylesheet" type="text/css" href="styles/style.css" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel ="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<title>Stamped. | Terms and Conditions</title>
+</head>
+<body>
+		<div class="topnav" id="myTopnav">
+  			<?php include("includes/inc_navi.php");?>
+		</div>
+		<div class="terms">
 				<p class="title">Terms and Conditions</p>
 				<p><b>Stamped.</b> is a business card design and print service that caters to bulk orders and individual orders.</p>
 				<p>1. It is the client full responsibility to read and understand the terms and condition stated below. Ordering from the online store means that you have read and understand the terms and conditions listed below.</p>
@@ -18,3 +32,21 @@
 				<p>15. We try our best to proof read your details but due to the personalized nature of this service, NO REFUND / RE PRINTING will be issued once printing has started. Therefore be extra careful when giving us the OK for the artwork.</p>
 				<p>16. Non transferrable </p>
 </div>
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p><?php include("includes/inc_bottomcontact.php");?></p>
+        </div>
+    </div>
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

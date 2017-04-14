@@ -1,7 +1,22 @@
-
+<!DOCTYPE html>
 <?php
 	include("functions/functions.php")
 ?>
+<html>
+<head>
+<link rel ="stylesheet" type="text/css" href="styles/style.css" />
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+    <link rel ="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<title>Stamped. | Quality Business Cards</title>
+</head>
+  <body oncontextmenu="return false;">
+    <div class="topnav" id="myTopnav">
+        <?php include("includes/inc_navi.php");?>
+    </div>
+
+
 
 <!--start of products-->
 
@@ -52,6 +67,9 @@
 			</div>
 			<div id="products_box">
 				<?php getPro( ); ?>
+				<?php
+					if(isset($_GET['pro_id'])){
+					include('details.php');}?>
 			</div>
 		</div>
 		<!--content area ends here-->
@@ -59,3 +77,22 @@
 	</div>
 	<!--content wrapper ends here-->
 </div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p><?php include("includes/inc_bottomcontact.php");?></p>
+        </div>
+    </div>
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>

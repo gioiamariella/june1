@@ -17,7 +17,7 @@
 	<!--content wrapper is here-->
 	<div class="content_wrapper">
 		
-		<!--sidebar is here-->
+		<!--
 		<div id="sidebar">
 			<div id="sidebar_title">Categories</div>
 
@@ -37,7 +37,7 @@
 					<?php getPrintFinish(); ?>
 			</ul>
 		</div>
-		<!--sidebar ends here-->
+	-->
 
 		<!--content area is here-->
 		<div id="content_area">
@@ -72,7 +72,7 @@
 								<img  src='admin_area/product_images/$pro_img'  class='columns'  width='500' />
 								<p><b>Php $pro_price</b></p>
 								<p> $pro_desc </p>
-								<a href='index.php?page=products' style='float: left;'>Go Back</a>
+								<a href='products.php?page=products' style='float: left;'>Go Back</a>
 							 </div>
 						</div>
 					";
