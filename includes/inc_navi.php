@@ -1,4 +1,4 @@
-<a href="home.php">Stamped.</a>
+<a href="index.php">Stamped.</a>
 <a href="products.php">Products</a>
 <a href="customizer.php">The Customizer</a>
 <a href="uploader.php">The Uploader</a>
