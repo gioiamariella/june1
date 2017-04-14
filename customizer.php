@@ -1,15 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-   <meta charset="utf-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="styles/bootstrap.min.css">
-   <link rel="stylesheet" href="styles/spectrum.css">
-   <link rel="stylesheet" href="styles/cstmzrstyle.css">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link rel ="stylesheet" type="text/css" href="styles/style.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+	 <?php include("includes/inc_headerscripts.php");?></script>
 
     <title>STAMPED. | The Customizer</title>
 

@@ -4,11 +4,7 @@
 ?>
 <html>
 <head>
-<link rel ="stylesheet" type="text/css" href="styles/style.css" />
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link rel ="stylesheet" type="text/css" href="styles/style.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<?php include("includes/inc_headerscripts.php");?>
 <title>Stamped. | Quality Business Cards</title>
 </head>
   <body oncontextmenu="return false;">

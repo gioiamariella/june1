@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel ="stylesheet" type="text/css" href="styles/style.css" />
- <meta http-equiv="content-type" content="text/html; charset=utf-8" />  
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
-    <link rel ="stylesheet" type="text/css" href="styles/style.css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+<?php include("includes/inc_headerscripts.php");?>
 <title>Stamped. | Quality Business Cards</title>
 </head>
 <body>
@@ -20,25 +16,28 @@
   </div>
 </div>
 
-<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;height:60%;">
-  <h3 style="text-align:center;">We keep it classy.</h3>
-  <p><center>Here at <b>STAMPED.</b>, we'll help you make a good, lasting first impression.</center></p>
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;height:90%;">
+  <h3 style="text-align:center; font-family: 'Lora', serif;"">We keep it classy.</h3></i>
+  <p><i><center>Here at <b>STAMPED.</b>, we'll help you make a good, lasting first impression.</center></p>
   <div id="homedesc">
       <center><b>Choose a template</b><br>
-      <img src="images/template_icon.png"/></center>
+      <img src="images/template_icon.png" height="100px"/></center>
       <p>Pressed for time? Want an instant, quality design for your card? Pick from our collection of designer-made templates!</p>
+      <div class="button"><a href="products.php">Check it out</a></div>
   </div>
 
   <div id="homedesc">
       <center><b>The Customizer</b><br>
-      <img src="images/customizer_icon.png"/></center>
+      <img src="images/customizer_icon.png" height="100px"/></center>
       <p>Feeling a bit artsy? Why not create your own calling card from scratch! Add flowers, choose a font - you name it, you can do it!</p>
+      <div class="button"><a href="customizer.php">Check it out</a></div>
   </div>
 
   <div id="homedesc">
       <center><b>Upload Your Own</b><br>
-      <img src="images/upload_icon.png"/></center>
+      <img src="images/upload_icon.png" height="100px"/></center>
       <p>Already have a design but have no idea where to get it printed? You've come to the right place! We'll print it for you, top-quality.</p>
+      <div class="button"><a href="uploader.php">Check it out</a></div>
   </div>
 </div>
     <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page
