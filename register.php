@@ -1,47 +1,67 @@
 <?php
-/*
-Author: Javed Ur Rehman
-Website: http://www.allphptricks.com/
-*/
-?>
+/* Registration process, inserts user info into the database 
+   and sends account confirmation email message
+ */
 
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Registration</title>
-<link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-<?php
-	require('db.php');
-    // If form submitted, insert values into the database.
-    if (isset($_REQUEST['username'])){
-		$username = stripslashes($_REQUEST['username']); // removes backslashes
-		$username = mysqli_real_escape_string($con,$username); //escapes special characters in a string
-		$email = stripslashes($_REQUEST['email']);
-		$email = mysqli_real_escape_string($con,$email);
-		$password = stripslashes($_REQUEST['password']);
-		$password = mysqli_real_escape_string($con,$password);
+// Set session variables to be used on profile.php page
+$_SESSION['email'] = $_POST['email'];
+$_SESSION['first_name'] = $_POST['firstname'];
+$_SESSION['last_name'] = $_POST['lastname'];
 
-		$trn_date = date("Y-m-d H:i:s");
-        $query = "INSERT into `users` (username, password, email, trn_date) VALUES ('$username', '".md5($password)."', '$email', '$trn_date')";
-        $result = mysqli_query($con,$query);
-        if($result){
-            echo "<div class='form'><h3>You are registered successfully.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
-        }
-    }else{
-?>
-<div class="form">
-<h1>Registration</h1>
-<form name="registration" action="" method="post">
-<input type="text" name="username" placeholder="Username" required />
-<input type="email" name="email" placeholder="Email" required />
-<input type="password" name="password" placeholder="Password" required />
-<input type="submit" name="submit" value="Register" />
-</form>
-<br /><br />
-</div>
-<?php } ?>
-</body>
-</html>
+// Escape all $_POST variables to protect against SQL injections
+$first_name = $mysqli->escape_string($_POST['firstname']);
+$last_name = $mysqli->escape_string($_POST['lastname']);
+$email = $mysqli->escape_string($_POST['email']);
+$password = $mysqli->escape_string(password_hash($_POST['password'], PASSWORD_BCRYPT));
+$hash = $mysqli->escape_string( md5( rand(0,1000) ) );
+      
+// Check if user with that email already exists
+$result = $mysqli->query("SELECT * FROM customers WHERE email='$email'") or die($mysqli->error());
+
+// We know user email exists if the rows returned are more than 0
+if ( $result->num_rows > 0 ) {
+    
+    $_SESSION['message'] = 'User with this email already exists!';
+    header("location: error.php");
+    
+}
+else { // Email doesn't already exist in a database, proceed...
+
+    // active is 0 by DEFAULT (no need to include it here)
+    $sql = "INSERT INTO customers (first_name, last_name, email, password, hash) " 
+            . "VALUES ('$first_name','$last_name','$email','$password', '$hash')";
+
+    // Add user to the database
+    if ( $mysqli->query($sql) ){
+
+        $_SESSION['active'] = 0; //0 until user activates their account with verify.php
+        $_SESSION['logged_in'] = true; // So we know the user has logged in
+        $_SESSION['message'] =
+                
+                 "Confirmation link has been sent to $email, please verify
+                 your account by clicking on the link in the message!";
+
+        // Send registration confirmation link (verify.php)
+        $to      = $email;
+        $subject = 'Welcome to STAMPED.!';
+        $message_body = '
+        Hello '.$first_name.',
+
+        Thank you for signing up!
+
+        Please click this link to activate your account:
+
+        http://localhost/THESIS/verify.php?email='.$email.'&hash='.$hash;  
+
+        mail( $to, $subject, $message_body );
+
+        header("location: profile.php"); 
+
+    }
+
+    else {
+        $_SESSION['message'] = 'Registration failed!';
+        header("location: error.php");
+    }
+
+}

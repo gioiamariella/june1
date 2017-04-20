@@ -1,48 +1,25 @@
-<?php
-require 'db.php';
-session_start();
-?>
 <!DOCTYPE html>
 <html>
 <head>
 <?php include("includes/inc_headerscripts.php");?>
-<title>STAMPED. | Sign Up / Log In</title>
+<title>Stamped. | Quality Business Cards</title>
 </head>
-<?php
-if ($_SERVER['REQUEST_METHOD'] == 'POST')
-{
-	if (isset($_POST['login'])) { //login si user
-		require 'loginuser.php';
-	}
-
-	elseif (isset($_POST['register']))  { //register si user
-		require 'register.php';
-	}
-}
-?>
 <body>
 
 	<div class="topnav" id="myTopnav">
 		<?php include("includes/inc_navi.php");?>
 	</div>
 
-	<div class="login_nav">
-		<p><a href="#signup">Sign Up</a> | <a href="#login">Log In</a></p>
-	</div>
-
 	<div class="login_container">
-		<?php
-			if(isset($_GET['page'])) {
-				switch ($_GET['page']) {
-					case 'login':
-					include('includes/login.php');
-					break;
-					case 'register':
-					include('includes/register.php');
-					break;
-				}
-			}
-		?>
+		<h3>Payment Details</h3>
+		<form method="post" action="login_user.php">
+     		Username<br>
+       		<input type="text" name="username" placeholder="Username"><br>
+     		Password:<br>
+     		<input type="password" name="password" placeholder="Password"><br><br>
+     		<button type="reset" value="Reset">Reset</button>&nbsp;&nbsp;
+     		<input type="submit" value="Log In" name="submit">
+     	</form>
 	</div>
 
     <div style="position:relative;">

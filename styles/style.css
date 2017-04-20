@@ -1,7 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 * {
   margin: 0;
@@ -65,7 +61,7 @@ html, body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 13px;
     margin: 0 auto;
 }
 
@@ -106,12 +102,14 @@ div.terms {
 div.terms p.title{
   text-align:center;
   font-size: 100%;
-  text-shadow: 5px 5px 10px #24b2a2;
+  text-shadow: 3px 3px 0px #CFCFCF;
   margin-bottom: 30px;
   word-spacing: 10px;
-  letter-spacing: 5px;
   font-size: 250%;
-
+  font-family: 'Lora', serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #B01A4A;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -349,8 +347,22 @@ div.button {
   font-color: white;
 }
 
-div.button:a{
-  text-transform: uppercase;
-  text-decoration: none;
-  font-color: white;
+/*LOGIN*/
+
+div.login_container {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 1%;
+  padding: 10px;
+  background-color: #ffd1dc;
+}
+
+div.login_nav {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 1%;
+  padding: 10px;
+  background-color: #FFBAD3;
 }
