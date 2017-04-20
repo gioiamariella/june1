@@ -26,39 +26,23 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 		<?php include("includes/inc_navi.php");?>
 	</div>
 
-	<p><a href="#signup">Sign Up</a> | <a href="#login">Log In</a></p>
+	<div class="login_nav">
+		<p><a href="#signup">Sign Up</a> | <a href="#login">Log In</a></p>
+	</div>
 
 	<div class="login_container">
-		<div id="login">
-			<h1>Welcome Back!</h1>
-			<form action ="login.php" method="post" autocomplete="off">
-				<b>Email Address*</b>:&nbsp;
-				<input type="email" required autocomplete="of" name="email"/>
-				<br>
-				<b>Password:*</b>:&nbsp;
-				<input type="password" required autocomplete="off" name="password"/>
-				<br>
-				<p style="float: right;"><a href="forgot.php">Forgot Password?</a></p>
-				<button name="login"/>Log In</button>
-			</form>
-		</div>
-
-		<div id="signup">
-			<form action="login.php" method="post" autocomplete="off">
-				<b>First Name</b>:&nbsp;
-				<input type="text" required autocomplete="off" name='firstname'/>
-				<br>
-				<b>Last Name</b>:&nbsp;
-				<input type="text" required autocomplete="off" name='firstname'/>
-				<br>
-				<b>Email Address:</b>&nbsp;
-				<input type="email" required autocomplete="off" name='email'/>
-				<br>
-				<b>Set A Password:</b>&nbsp;
-				<input type="password" required autocomplete="off" name='password'/>
-				<button type="submit" name="register"/>Register</button>
-			</form>
-		</div>
+		<?php
+			if(isset($_GET['page'])) {
+				switch ($_GET['page']) {
+					case 'login':
+					include('includes/login.php');
+					break;
+					case 'register':
+					include('includes/register.php');
+					break;
+				}
+			}
+		?>
 	</div>
 
     <div style="position:relative;">

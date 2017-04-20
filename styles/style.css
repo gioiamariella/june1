@@ -357,3 +357,12 @@ div.login_container {
   padding: 10px;
   background-color: #ffd1dc;
 }
+
+div.login_nav {
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 1%;
+  padding: 10px;
+  background-color: #FFBAD3;
+}
