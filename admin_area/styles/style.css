@@ -58,6 +58,8 @@ p.desc {
 }
 
 table {
-	text-align: center;
-	margin: 0%, 10%;
+	margin-left: 10%;
+	margin-right: 10%;
+	width: 80%;
+	padding: 10px;
 }

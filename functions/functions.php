@@ -1,7 +1,5 @@
 <?php
 $con = mysqli_connect("localhost","root","","stampeddb");
-
-
 //getting the categories
 
 function getCats () {
@@ -60,20 +58,25 @@ function getPro() {
 					$pro_title = $row_pro['product_title'];
 					$pro_price = $row_pro['product_price'];
 					$pro_img = $row_pro['product_img']; 
-				?>
+				
+				echo "
 					<div id='single_product'>
 						 <center><h3><?=$pro_title?></h3>
 						 <div class='effects'>
-						 	<a href='products.php?pro_id=<?=$pro_id?>' style='float: left;'>
-							<img src='admin_area/product_images/<?=$pro_img?>'  class='columns'  width='320' height='150'/>
-							<p><b>Php <?=$pro_price?></b></p>
+							<img src='admin_area/product_images/$pro_img'  class='columns'  width='320' height='150'/>
+							<p><b>Php $pro_price</b></p>
+							<a href='details.php?pro_id=$pro_id' style='float: left;'>Details</a>
+
 							</a>
 						 </div>
+
 					</div>
-				<?php
-				}
+				";
+				
 		}
 	}
 }
+}
+
 
 ?>

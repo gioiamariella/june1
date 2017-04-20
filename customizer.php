@@ -196,7 +196,7 @@
         <script src="js/spectrum.js"></script>
  		<script src="js/script.js"></script>
 
-     <div style="position:relative;">
+    <div style="position:relative;">
         <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
           <p><?php include("includes/inc_bottomcontact.php");?></p>
         </div>

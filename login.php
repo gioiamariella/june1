@@ -1,53 +1,80 @@
 <?php
-/*
-Author: Javed Ur Rehman
-Website: http://www.allphptricks.com/
-*/
+require 'db.php';
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Login</title>
-<link rel="stylesheet" href="css/style.css" />
+<?php include("includes/inc_headerscripts.php");?>
+<title>STAMPED. | Sign Up / Log In</title>
 </head>
-<body>
 <?php
-	require('db.php');
-	session_start();
-    // If form submitted, insert values into the database.
-    if (isset($_POST['username'])){
-		
-		$username = stripslashes($_REQUEST['username']); // removes backslashes
-		$username = mysqli_real_escape_string($con,$username); //escapes special characters in a string
-		$password = stripslashes($_REQUEST['password']);
-		$password = mysqli_real_escape_string($con,$password);
-		
-	//Checking is user existing in the database or not
-        $query = "SELECT * FROM `users` WHERE username='$username' and password='".md5($password)."'";
-		$result = mysqli_query($con,$query) or die(mysql_error());
-		$rows = mysqli_num_rows($result);
-        if($rows==1){
-			$_SESSION['username'] = $username;
-			header("Location: index.php"); // Redirect user to index.php
-            }else{
-				echo "<div class='form'><h3>Username/password is incorrect.</h3><br/>Click here to <a href='login.php'>Login</a></div>";
-				}
-    }else{
+if ($_SERVER['REQUEST_METHOD'] == 'POST')
+{
+	if (isset($_POST['login'])) { //login si user
+		require 'loginuser.php';
+	}
+
+	elseif (isset($_POST['register']))  { //register si user
+		require 'register.php';
+	}
+}
 ?>
-<div class="form">
-<h1>Log In</h1>
-<form action="" method="post" name="login">
-<input type="text" name="username" placeholder="Username" required />
-<input type="password" name="password" placeholder="Password" required />
-<input name="submit" type="submit" value="Login" />
-</form>
-<p>Not registered yet? <a href='registration.php'>Register Here</a></p>
-<br /><br />
+<body>
 
-</div>
-<?php } ?>
+	<div class="topnav" id="myTopnav">
+		<?php include("includes/inc_navi.php");?>
+	</div>
 
+	<p><a href="#signup">Sign Up</a> | <a href="#login">Log In</a></p>
 
+	<div class="login_container">
+		<div id="login">
+			<h1>Welcome Back!</h1>
+			<form action ="login.php" method="post" autocomplete="off">
+				<b>Email Address*</b>:&nbsp;
+				<input type="email" required autocomplete="of" name="email"/>
+				<br>
+				<b>Password:*</b>:&nbsp;
+				<input type="password" required autocomplete="off" name="password"/>
+				<br>
+				<p style="float: right;"><a href="forgot.php">Forgot Password?</a></p>
+				<button name="login"/>Log In</button>
+			</form>
+		</div>
+
+		<div id="signup">
+			<form action="login.php" method="post" autocomplete="off">
+				<b>First Name</b>:&nbsp;
+				<input type="text" required autocomplete="off" name='firstname'/>
+				<br>
+				<b>Last Name</b>:&nbsp;
+				<input type="text" required autocomplete="off" name='firstname'/>
+				<br>
+				<b>Email Address:</b>&nbsp;
+				<input type="email" required autocomplete="off" name='email'/>
+				<br>
+				<b>Set A Password:</b>&nbsp;
+				<input type="password" required autocomplete="off" name='password'/>
+				<button type="submit" name="register"/>Register</button>
+			</form>
+		</div>
+	</div>
+
+    <div style="position:relative;">
+        <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+          <p><?php include("includes/inc_bottomcontact.php");?></p>
+        </div>
+    </div>
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("myTopnav");
+	    if (x.className === "topnav") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "topnav";
+	    }
+	}
+	</script>
 </body>
 </html>
